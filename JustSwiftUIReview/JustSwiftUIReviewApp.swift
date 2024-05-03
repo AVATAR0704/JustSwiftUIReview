@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct JustSwiftUIReviewApp: App {
+    
+    let mainview = SpacerB()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            mainview
         }
     }
 }
