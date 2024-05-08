@@ -12,6 +12,7 @@
 		7C018E062BEB85630070F5BC /* ActionSheetB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C018E052BEB85630070F5BC /* ActionSheetB.swift */; };
 		7C018E082BEB946B0070F5BC /* ContextMenuB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C018E072BEB946B0070F5BC /* ContextMenuB.swift */; };
 		7C018E0A2BEB9DDD0070F5BC /* TextFieldB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C018E092BEB9DDD0070F5BC /* TextFieldB.swift */; };
+		7C018E0C2BEBA88A0070F5BC /* TextEditorB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C018E0B2BEBA88A0070F5BC /* TextEditorB.swift */; };
 		7C281F222BE63CC2007739F7 /* SheetsB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C281F212BE63CC2007739F7 /* SheetsB.swift */; };
 		7C6CE8592BE203F600DDC20E /* JustSwiftUIReviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE8582BE203F600DDC20E /* JustSwiftUIReviewApp.swift */; };
 		7C6CE85B2BE203F600DDC20E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE85A2BE203F600DDC20E /* ContentView.swift */; };
@@ -54,6 +55,7 @@
 		7C018E052BEB85630070F5BC /* ActionSheetB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetB.swift; sourceTree = "<group>"; };
 		7C018E072BEB946B0070F5BC /* ContextMenuB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuB.swift; sourceTree = "<group>"; };
 		7C018E092BEB9DDD0070F5BC /* TextFieldB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldB.swift; sourceTree = "<group>"; };
+		7C018E0B2BEBA88A0070F5BC /* TextEditorB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorB.swift; sourceTree = "<group>"; };
 		7C281F212BE63CC2007739F7 /* SheetsB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsB.swift; sourceTree = "<group>"; };
 		7C6CE8552BE203F600DDC20E /* JustSwiftUIReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustSwiftUIReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6CE8582BE203F600DDC20E /* JustSwiftUIReviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustSwiftUIReviewApp.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				7C018E052BEB85630070F5BC /* ActionSheetB.swift */,
 				7C018E072BEB946B0070F5BC /* ContextMenuB.swift */,
 				7C018E092BEB9DDD0070F5BC /* TextFieldB.swift */,
+				7C018E0B2BEBA88A0070F5BC /* TextEditorB.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				7C018E082BEB946B0070F5BC /* ContextMenuB.swift in Sources */,
 				7CB5A9692BE3DEDC0066DF0C /* ButtonB.swift in Sources */,
 				7C018E0A2BEB9DDD0070F5BC /* TextFieldB.swift in Sources */,
+				7C018E0C2BEBA88A0070F5BC /* TextEditorB.swift in Sources */,
 				7C8D933C2BE528E6006AA71E /* AnimationCurvesB.swift in Sources */,
 				7C6CE8762BE2547100DDC20E /* BackgroundAndOverlayB.swift in Sources */,
 				7C8D93342BE4F43F006AA71E /* BindingB.swift in Sources */,
