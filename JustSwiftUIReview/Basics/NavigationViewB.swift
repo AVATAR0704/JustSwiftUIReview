@@ -204,3 +204,10 @@ struct NavigationViewB_Previews: PreviewProvider {
         NavigationViewB()
     }
 }
+
+
+
+
+//var fruits1: [String] = ["Apple","banana","peach","orange","pineapple"]
+//var vegies1: [String] = ["potato","tomato","onion","cabbage"]
+
