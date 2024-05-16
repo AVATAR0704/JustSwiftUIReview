@@ -15,6 +15,11 @@
 		7C018E0C2BEBA88A0070F5BC /* TextEditorB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C018E0B2BEBA88A0070F5BC /* TextEditorB.swift */; };
 		7C281F222BE63CC2007739F7 /* SheetsB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C281F212BE63CC2007739F7 /* SheetsB.swift */; };
 		7C2D7FDD2BEE43BA00349E11 /* ToggleB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D7FDC2BEE43BA00349E11 /* ToggleB.swift */; };
+		7C3951252BF4761500FED0BB /* IfGuardB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3951242BF4761500FED0BB /* IfGuardB.swift */; };
+		7C3951272BF489A400FED0BB /* TapGestureB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3951262BF489A400FED0BB /* TapGestureB.swift */; };
+		7C3951292BF48F2600FED0BB /* ModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3951282BF48F2600FED0BB /* ModelB.swift */; };
+		7C39512B2BF49FF100FED0BB /* ViewModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39512A2BF49FF100FED0BB /* ViewModelB.swift */; };
+		7C39512D2BF4CB4A00FED0BB /* EnvironmentObjectB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39512C2BF4CB4A00FED0BB /* EnvironmentObjectB.swift */; };
 		7C3D2E532BF3A1E5007D3EB5 /* DarkModeB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D2E522BF3A1E4007D3EB5 /* DarkModeB.swift */; };
 		7C3D2E552BF3BBDA007D3EB5 /* OnAppearB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D2E542BF3BBDA007D3EB5 /* OnAppearB.swift */; };
 		7C6CE8592BE203F600DDC20E /* JustSwiftUIReviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE8582BE203F600DDC20E /* JustSwiftUIReviewApp.swift */; };
@@ -67,6 +72,11 @@
 		7C018E0B2BEBA88A0070F5BC /* TextEditorB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorB.swift; sourceTree = "<group>"; };
 		7C281F212BE63CC2007739F7 /* SheetsB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsB.swift; sourceTree = "<group>"; };
 		7C2D7FDC2BEE43BA00349E11 /* ToggleB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleB.swift; sourceTree = "<group>"; };
+		7C3951242BF4761500FED0BB /* IfGuardB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfGuardB.swift; sourceTree = "<group>"; };
+		7C3951262BF489A400FED0BB /* TapGestureB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureB.swift; sourceTree = "<group>"; };
+		7C3951282BF48F2600FED0BB /* ModelB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelB.swift; sourceTree = "<group>"; };
+		7C39512A2BF49FF100FED0BB /* ViewModelB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelB.swift; sourceTree = "<group>"; };
+		7C39512C2BF4CB4A00FED0BB /* EnvironmentObjectB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectB.swift; sourceTree = "<group>"; };
 		7C3D2E522BF3A1E4007D3EB5 /* DarkModeB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeB.swift; sourceTree = "<group>"; };
 		7C3D2E542BF3BBDA007D3EB5 /* OnAppearB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearB.swift; sourceTree = "<group>"; };
 		7C6CE8552BE203F600DDC20E /* JustSwiftUIReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustSwiftUIReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +216,11 @@
 				7CBA0E672BF38E7E00CD835A /* TabViewB.swift */,
 				7C3D2E522BF3A1E4007D3EB5 /* DarkModeB.swift */,
 				7C3D2E542BF3BBDA007D3EB5 /* OnAppearB.swift */,
+				7C3951242BF4761500FED0BB /* IfGuardB.swift */,
+				7C3951262BF489A400FED0BB /* TapGestureB.swift */,
+				7C3951282BF48F2600FED0BB /* ModelB.swift */,
+				7C39512A2BF49FF100FED0BB /* ViewModelB.swift */,
+				7C39512C2BF4CB4A00FED0BB /* EnvironmentObjectB.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -289,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD011082BF200A700C02391 /* PickerB.swift in Sources */,
+				7C39512D2BF4CB4A00FED0BB /* EnvironmentObjectB.swift in Sources */,
 				7C8D93382BE50E7E006AA71E /* TernaryOperatorB.swift in Sources */,
 				7C8D933E2BE5319C006AA71E /* TransitionB.swift in Sources */,
 				7C6CE8682BE204A900DDC20E /* VHTextView.swift in Sources */,
@@ -301,6 +317,9 @@
 				7C6CE86A2BE20AD600DDC20E /* ShapesB.swift in Sources */,
 				7CB5A9612BE39FAB0066DF0C /* File.swift in Sources */,
 				7C018E022BEB5A7E0070F5BC /* ListB.swift in Sources */,
+				7C39512B2BF49FF100FED0BB /* ViewModelB.swift in Sources */,
+				7C3951252BF4761500FED0BB /* IfGuardB.swift in Sources */,
+				7C3951292BF48F2600FED0BB /* ModelB.swift in Sources */,
 				7CD0110C2BF214F300C02391 /* DatePickerB.swift in Sources */,
 				7C6CE8722BE23FE100DDC20E /* ImageB.swift in Sources */,
 				7CB5A9632BE3A9780066DF0C /* ScrollViewB.swift in Sources */,
@@ -323,6 +342,7 @@
 				7CB5A95A2BE369760066DF0C /* SpacerB.swift in Sources */,
 				7C281F222BE63CC2007739F7 /* SheetsB.swift in Sources */,
 				7C6CE8742BE2498500DDC20E /* FrameB.swift in Sources */,
+				7C3951272BF489A400FED0BB /* TapGestureB.swift in Sources */,
 				7C8D93362BE5040A006AA71E /* ConditionalB.swift in Sources */,
 				7C8D93302BE4C8B3006AA71E /* ExtractingB.swift in Sources */,
 				7CC7249B2BE648880028548E /* PopOverB.swift in Sources */,
