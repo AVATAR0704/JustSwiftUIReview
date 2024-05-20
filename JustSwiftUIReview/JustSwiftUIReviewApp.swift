@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct JustSwiftUIReviewApp: App {
     
-    let mainview = TransitionB()
+    let mainview = IntroViewG()
     
     var body: some Scene {
         WindowGroup {
