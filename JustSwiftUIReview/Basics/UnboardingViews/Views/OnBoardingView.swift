@@ -17,39 +17,45 @@ struct OnBoardingViewG: View {
     //Choose gender
     
     @State var nameofUser: String = ""
+    @State var ageOfUser: Double = 20
+    @State var genderOfUser: String = Gender.male.rawValue
+    @State var userNameOfUser: String = ""
+    @State var passwordOfUser: String = ""
     
     
-    @State var currentState: Int = 1
+    @State var currentState: Int = 0
     
     
     
-    
+    //MARK: body
     var body: some View {
         
         
         ZStack {
             
             
-            VStack {
-                
+            VStack(spacing:20) {
                 Spacer()
+                
+               
+                    imageofWelcome
+                    
+              
                 
                 
                 switch currentState {
                 case 0:
-                    
-                   welcomePage
-                    
+                    welcomePage
                 case 1:
                     namePage
                 case 2:
-                    Text("Age Page")
+                    agePage
                 case 3:
-                    Text("gender Page")
+                    genderPage
                 case 4:
-                    Text("username Page")
+                    usernamePage
                 case 5:
-                    Text("Password Page")
+                    passwordPage
                     
                 default:
                     RoundedRectangle(cornerRadius: 25)
@@ -78,6 +84,7 @@ struct OnBoardingViewG: View {
                 }
                 
             }//Vstack
+            .shadow(radius: 10, x: 10, y: 10)
             .padding()
             
         }//zStack
@@ -88,6 +95,13 @@ struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingViewG()
             .background(Color("CustomColor"))
+           // .background(Color.purple)
+//            .background(Image("im5")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//            )
+            
     }
 }
 
@@ -95,8 +109,21 @@ struct OnBoardingView_Previews: PreviewProvider {
 extension OnBoardingViewG {
     
     
-    
-    
+    //MAin Image
+    private var imageofWelcome: some View {
+           // Image(systemName: "globe.central.south.asia.fill")
+        Image("icUzb1")
+               .resizable()
+               .frame(width: 100, height: 100)
+               .padding()
+               .background()
+               .cornerRadius(10)
+               
+               .font(.largeTitle)
+               
+               
+
+    }
     
     //Main Next Button
     private var nextbuttonView: some View {
@@ -105,12 +132,14 @@ extension OnBoardingViewG {
             
         } label: {
             Text("Next")
+                .fontWeight(.bold)
                 .padding()
-                .foregroundColor(.white)
+                .foregroundColor(Color("CustomColor"))
                 .frame(maxWidth: .infinity)
-                .background(Color.blue)
+                .background(Color.white)
                 .cornerRadius(10)
                 .padding(.bottom)
+                .shadow(radius: 10, x: 20, y: 20)
                 
         }
         
@@ -129,12 +158,12 @@ extension OnBoardingViewG {
         
     }
     
+    
+    
     //MARK: Welcome Page
     private var welcomePage: some View {
         
         VStack {
-           imageofWelcome
-           
            textofwelcome
             
            textfullWelcome
@@ -142,15 +171,7 @@ extension OnBoardingViewG {
         
     }
     
-    private var imageofWelcome: some View {
-            Image(systemName: "globe.central.south.asia.fill")
-               .resizable()
-               .scaledToFit()
-               .font(.largeTitle)
-               .frame(width: 200, height: 100)
-               .foregroundColor(.white)
-
-    }
+   
     
     private var textofwelcome: some View {
         Text("TTU")
@@ -173,7 +194,7 @@ extension OnBoardingViewG {
         VStack {
             namelabel
             
-            userNameTextField
+            nameTextField
         }
     }
     
@@ -186,14 +207,158 @@ extension OnBoardingViewG {
             .foregroundColor(.white)
     }
     
-    private var userNameTextField: some View {
-        TextField("username", text: $nameofUser)
+    private var nameTextField: some View {
+        TextField("name", text: $nameofUser)
             .padding()
             .background(.white)
             .cornerRadius(10)
     }
     
+    //MARK: Age Page
+    
+    private var agePage: some View {
+        VStack(spacing: 20){
+            ageChooselabel
+            
+            agelabel
+            
+            sliderAge
+        }
+        
+    }
    
+    private var ageChooselabel: some View {
+        Text("Please, choose your age:")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+    }
+    
+    private var agelabel: some View {
+        Text(String(format: "%.0f", ageOfUser))
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+    }
+    
+    private var sliderAge: some View {
+        
+        Slider(value: $ageOfUser,
+               in: 10...100, step: 1.0,
+               label: {Text("Slider")},
+               minimumValueLabel:
+                {Text("18")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(.white)},
+               maximumValueLabel:
+                {Text("100")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        })
+        .accentColor(.white)
+        
+    }
+    
+    //MARK: GenderPage
+    private var genderPage: some View {
+        
+        VStack(spacing: 20) {
+            
+            genderChooselabel
+            
+            genderPicker
+        }
+        
+    }
+    
+    private var genderChooselabel: some View {
+       
+          
+            Text("Your Gender: \(genderOfUser.capitalized)")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        
+    }
+    
+    private var genderPicker: some View {
+        
+        Picker(selection: $genderOfUser,
+               content: {
+                    Text("Male")
+                .foregroundColor(Color("CustomColor"))
+                .fontWeight(.bold)
+                .tag("male")
+            
+                    Text("Female")
+                .foregroundColor(Color("CustomColor"))
+                .fontWeight(.bold)
+                .tag("female")
+                        },
+               label: {Text("Select Gender")}
+        )
+        .pickerStyle(WheelPickerStyle())
+        .background(
+            Color.white
+                .cornerRadius(20)
+        )
+        
+        
+    }
+    
+    //MARK: UserName Page
+    private var usernamePage: some View {
+        VStack {
+            usernamelabel
+            
+            userNameTextField
+        }
+    }
+    
+    
+    
+    private var usernamelabel: some View {
+        Text("Please, Enter your username")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+    }
+    
+    private var userNameTextField: some View {
+        TextField("@username", text: $userNameOfUser)
+            .padding()
+            .background(.white)
+            .cornerRadius(10)
+    }
+    
+    //MARK: PasswordPage
+    
+    private var passwordPage: some View {
+        VStack {
+            passwordlabel
+            
+            passwordTextField
+        }
+        
+    }
+    
+    private var passwordlabel: some View {
+        Text("Please, create your password")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+    }
+    
+    private var passwordTextField: some View {
+        SecureField("password", text: $passwordOfUser)
+            .keyboardType(.default)
+            .padding()
+            .background(.white)
+            .cornerRadius(10)
+    }
+    
     
 }
 
